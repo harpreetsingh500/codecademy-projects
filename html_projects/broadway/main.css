@@ -1,0 +1,110 @@
+@import url("../reset.css");
+
+body {
+  font: normal 20px Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #333;
+}
+
+header nav {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  font-size: 14px;
+  color: white;
+  padding: 0 5px;
+}
+
+main {
+  background: white;
+}
+
+main header {
+  height: 800px;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.png) no-repeat center center;
+  background-size: cover;
+}
+
+main header section {
+  text-align: center;
+  padding: 200px 0 0 0;
+}
+
+main header section h1 {
+  font-size: 70px;
+  color: #333;
+  margin: 0 0 50px 0;
+}
+
+main header section a {
+  color: white;
+  padding: 15px 35px;
+  background: #333;
+  font-size: 18px;
+}
+
+main article {
+  padding: 75px 0 90px 0;
+}
+
+main article ul {
+  text-align: center;
+}
+
+main article ul li {
+  width: 15%;
+  display: inline-block;
+  margin: 0 30px;
+}
+
+main article ul li h2 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+}
+
+main article ul li p {
+  font-size: 14px;
+  margin: 0 0 40px 0;
+}
+
+main article ul li img {
+  width: 40px;
+  margin: 0 0 20px 0;
+}
+
+main article ul li a {
+  font-size: 12px;
+  padding: 10px 40px;
+  border: 1px solid black;
+  color: #333;
+}
+
+footer {
+  background: #333;
+}
+
+footer section {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+footer section p {
+  color: white;
+  font-size: 10px;
+}
+
+footer section p:before {
+  content: "\00A9";
+  padding: 0 5px 0 0;
+}
