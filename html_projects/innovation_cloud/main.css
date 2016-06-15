@@ -1,0 +1,141 @@
+@import url("../reset.css");
+
+body {
+  font: normal 20px Helvetica, Arial, sans-serif;
+  color: white;  
+}
+
+a {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+a:hover {
+  background: #117bff !important;
+}
+
+/* 
+  CSS for the Header section
+*/
+
+header {
+  text-align: center;
+  background: url("https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 200px 300px;
+}
+
+header h1 {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 80%;
+  margin: 0 0 80px 0;
+}
+
+header p {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 7px;
+  margin: 0 0 40px 0;
+}
+
+header a {
+  padding: 10px 40px;
+  background: black;
+}
+
+/* 
+  CSS for the Navigation section
+*/
+
+nav {
+  background: black;
+  padding: 30px 0 30px 200px;
+}
+
+nav ul, nav ul li {
+  display: inline-block;
+}
+
+nav li a {
+  padding: 32px 5px;
+}
+
+/* 
+  CSS for the Main section
+*/
+
+main {
+  padding: 90px 200px;
+}
+
+main img {
+  margin-top: 40px;
+  width: 20%;
+}
+
+main article {
+  width: 70%;
+  float: right;
+}
+
+main article h2, 
+main article p {
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+main article p {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+/* 
+  CSS for the Footer section with the class above
+*/
+
+.above {
+  background: url("https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 600px;
+  padding: 250px 200px;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.above h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.above p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.above a {
+  padding: 10px 40px;
+  background: black;
+}
+
+/* 
+  CSS for the Footer section with the class below
+*/
+
+.below {
+  padding: 30px 0 30px 200px;  
+  background: black;
+}
+
+.below p {
+  font-size: 14px;
+}
+
+.below p:before {
+  content: "\00A9";
+  margin-right: 5px;
+}
