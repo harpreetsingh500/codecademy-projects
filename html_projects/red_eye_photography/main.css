@@ -1,0 +1,96 @@
+@import url("../reset.css");
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #cccdce;
+  text-transform: uppercase;  
+}
+
+/*
+ CSS for the header section
+*/
+
+header {
+  text-align: center;
+  padding: 40px 0;
+  background: white;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+/*
+ CSS for the nav section
+*/
+
+nav {
+  margin: 20px 0;
+}
+
+nav ul {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav ul li {
+  padding: 0 10px;
+  display: inline;
+}
+
+nav ul li a:hover { 
+  cursor: pointer;
+  color: #31363d;
+}
+
+/*
+ CSS for the main section
+*/
+
+main {
+  margin: 70px 0 0;
+}
+
+main ul {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main ul li {
+  display: inline-block;
+  width: 31%;
+  margin: 0 1% 2%;
+}
+
+main ul li img {
+  width: 100%;
+}
+
+/*
+ CSS for the footer section
+*/
+
+footer {
+  height: 170px;  
+}
+
+footer p {
+  color: #31363d;
+  font-size: 10px;
+  text-align: right;
+  margin: 0 40px 0 0;
+}
+
+/*
+ CSS for media queries
+*/
+
+@media (max-width: 993px) {
+  main ul li {
+    margin: 0 0 2%;
+    width: 100%;
+  }
+}
