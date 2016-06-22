@@ -162,7 +162,7 @@ footer section {
 }
 
 footer section p {
-  text-align: left;
+  float: left;
   width: 33%;
   display: inline-block;
 }
@@ -177,6 +177,7 @@ footer section p:last-child {
 }
 
 footer section a {
+  float: left;
   color: #d8192f;
   text-align: center;
   width: 33%;
