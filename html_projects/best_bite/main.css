@@ -1,0 +1,200 @@
+@import url("../reset.css");
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a:hover,
+.second section a:hover {
+  background: rgba(216,25,47,1);
+  color: white;
+}
+
+/*
+ CSS for the top contaier
+*/
+
+.container {
+  width: 68%;
+  margin: 30px auto 40px auto;
+}
+
+/*
+ CSS for the header section
+*/
+
+header {
+  float: left;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+/*
+ CSS for the nav section
+*/
+
+nav {
+  float: right;
+}
+
+nav ul li {
+  margin: 0 10px 0 0;
+  float: left;
+}
+
+nav ul li:last-child {
+  margin: 0;
+}
+
+nav ul li:first-child a {
+  background: rgba(216,25,47,1);
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,.5)
+}
+
+nav ul li a {
+  display: block;
+  font-size: 16px;
+  color: #d8192f;
+  padding: 15px 27px;
+  border: 1px solid #d8192f;
+  border-radius: 4px;
+}
+
+
+/*
+ CSS for article with the class first
+*/
+
+.first {
+  height: 500px;
+  background: url("https://s3.amazonaws.com/codecademy-content/projects/bestbite/bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.first section {
+  margin: 140px 0 0 16%;
+  text-align: right;
+  display: inline-block;
+}
+
+.first section h2 {
+  font-size: 60px;
+  color: white;
+}
+
+/*
+ CSS for article with the class second
+*/
+
+.second {
+  text-align: center;
+  background: #36343f;
+  color: white;
+  padding: 35px 0;
+}
+
+.second section h3 {
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+
+.second section a {
+  display: inline-block;
+  padding: 10px 16px;
+  background: rgba(216,25,47,.5);
+  font-size: 18px;
+}
+
+/*
+ CSS for article with the class third
+*/
+
+.third {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.third h3 {
+  font-size: 30px;
+  margin: 0 0 25px 0;
+}
+
+.third ul {
+  padding: 40px 0 0 0;
+  border-top: 1px solid #eee;
+  width: 68%;
+  margin: 0 auto;
+}
+
+.third ul li {
+  width: 33.33%;
+  display: inline-block;
+  float: left;
+}
+
+.third ul li h4 {
+  color: #d8192f;
+  font-size: 20px;
+  margin: 30px 0 20px 0;
+}
+
+.third ul li p {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+/*
+ CSS for the footer section
+*/
+
+footer {
+  background: #eee;
+  padding: 40px 0 100px 0;
+}
+
+footer section {
+  width: 68%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+footer section p {
+  text-align: left;
+  width: 33%;
+  display: inline-block;
+}
+
+footer section p:first-child:before {
+  content: "\00A9";
+  padding: 0 4px 0 0;
+}
+
+footer section p:last-child {
+  text-align: right;
+}
+
+footer section a {
+  color: #d8192f;
+  text-align: center;
+  width: 33%;
+  display: inline-block;
+}
+
+footer section a:hover {
+  color: #d8192f;
+  background: none;
+  text-decoration: underline;
+}
+
+/*
+ CSS for the clearfix class
+*/
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
