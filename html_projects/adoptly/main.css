@@ -1,0 +1,190 @@
+@import url("../reset.css");
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;  
+}
+
+/*
+ CSS for the header section
+*/
+
+header {
+  color: white;
+  background: #30627E;
+}
+
+header section {
+  display: inline-block;
+}
+
+header section h1 {
+  display: inline-block;
+  font-size: 28px;
+  background: #e52364;
+  line-height: 40px;
+  padding: 20px 30px;
+}
+
+header section nav {
+  display: inline-block;
+}
+
+header section nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 30px;
+}
+
+/*
+ CSS for the main section
+*/
+
+/*
+ CSS for the article section with the class first
+*/
+
+.first {
+  background: url("https://s3.amazonaws.com/codecademy-content/projects/adoptly/bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
+
+.first h1 {
+  padding: 68px 0 0;
+  font-size: 63px;
+  color: #e52364;
+  font-weight: 700;
+}
+
+/*
+ CSS for the article section with the class second
+*/
+
+.second ul {
+  margin: 60px 0 80px;
+  max-width: 940px;
+  display: inline-block;
+}
+
+.second ul li {
+  padding: 0 15px;
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  display: inline-block;
+}
+
+.second ul li h2 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 33px;
+  margin: 0 0 10px;
+}
+
+.second ul li p {
+  min-height: 80px;
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.second ul li a {
+  margin: 20px 0 60px;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 16px;
+  color: #30627E;
+  width: 200px;
+  border: 1px solid #30627E;
+  box-sizing: border-box;
+}
+
+/*
+ CSS for the footer section
+*/
+
+footer {
+  background: #e52364;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: white;
+}
+
+div {
+  display: block;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+footer section p {
+  display: inline-block;
+}
+
+.copyright {
+ float: left;
+}
+
+.copyright p:before {
+  content: "\00A9";
+  margin: 0 3px 0 0;
+}
+
+.info {
+  float: right;
+}
+
+.info a {
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.info a:hover {
+  color: black;
+  background: #eee;  
+}
+
+/*
+ CSS for media query
+*/
+
+@media (max-width: 991px) {
+  .second ul li {
+    padding: 0 15px;
+    box-sizing: border-box;
+    float: none;
+    width: 85%;
+    display: inline-block;
+  }  
+}
+
+@media (max-width: 527px) {
+  .second ul li {
+    padding: 0 15px;
+    box-sizing: border-box;
+    float: none;
+    width: 95%;
+    display: inline-block;
+  }
+  
+  header section nav {
+    display: block;
+  }
+  
+  header section nav ul li {
+    display: block;
+    font-size: 20px;
+    padding: 20px 30px;
+  }  
+}
+
+/*
+ CSS for clearfix
+*/
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
