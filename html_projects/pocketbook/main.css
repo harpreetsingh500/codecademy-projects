@@ -1,0 +1,127 @@
+@import url("../reset.css");
+
+body {
+  background: url("https://s3.amazonaws.com/codecademy-content/projects/pocketbook/bg.jpg") no-repeat;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+header, 
+main, 
+footer {
+  max-width: 940px;
+  margin: 0 auto;
+  width: 940px;
+}
+
+header, 
+main {
+  border-bottom: 1px solid #e5e5e5;  
+}
+/*
+ CSS for the header section
+*/
+
+header {
+  text-align: center;  
+}
+
+header img {
+  padding: 30px 0;
+  width: 50px;
+}
+
+/*
+ CSS for the article with the class first
+*/
+
+.first {
+  margin: 80px 0;
+  padding: 0 15px;
+}
+
+.first h1 {
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+
+.first form {
+  width: 58.33333333%;
+}
+
+.first input, 
+.first label {
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.first div input {
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  color: #555;
+  box-sizing: border-box;
+  border: none;
+  margin: 0 0 15px;
+  width: 100%;
+}
+
+.first input[type="submit"] {
+  background: rgba(0,240,190,0.25);
+  color: white;
+  margin: 30px 0 0;
+  border: 0;
+  padding: 6px 12px;
+}
+
+.first label {
+  line-height: 20px;
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+/*
+ CSS for the footer section
+*/
+
+footer ul {
+  padding: 20px 0;
+  margin: 0 0 80px;
+}
+
+footer li {
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 0 0 20px;
+}
+
+/*
+ CSS for media query
+*/
+
+@media (max-width: 990px) {
+  header, 
+  main, 
+  footer {
+    width: 750px;
+  }
+  .first form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  header, 
+  main, 
+  footer {
+    width: 100%;
+  }  
+}
+
+
+
+
+
