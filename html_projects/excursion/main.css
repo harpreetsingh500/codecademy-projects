@@ -1,0 +1,135 @@
+@import url("../reset.css");
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: normal;
+}
+
+a {
+  background: #4386fc;
+  font-size: 16px;
+  padding: 16px 26px;
+  color: white;
+}
+
+/*
+ CSS for the header section
+*/
+
+header {
+  position: relative; 
+}
+
+header video {
+  width: 100%;
+}
+
+header section {
+  position: absolute;
+  max-width: 940px;
+  text-align: center;
+  margin: auto;
+  color: white;
+  right: 0;
+  top: 27%;
+  left: 0;
+}
+
+header section h1 {
+  font-size: 50px;
+  margin: 0 0 50px 0;
+  padding: 0 40px;
+}
+
+/*
+ CSS for article section with the class first
+*/
+
+.first {
+  text-align: center;
+  margin: 100px 0 130px;
+}
+
+.first h1 {
+  font-size: 48px;
+  margin: 40px 0;
+}
+
+.first p {
+  color: #333;
+  font-size: 21px;
+  padding: 0 30px;
+}
+
+/*
+ CSS for article section with the class second
+*/
+
+.second {
+  background: url("https://s3.amazonaws.com/codecademy-content/projects/excursion/camp.png") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
+
+/*
+ CSS for article section with the class third
+*/
+
+.third {
+  margin: 100px 0 130px;
+  text-align: center;
+}
+
+.third img {
+  width: 87px;
+}
+
+.third h2 {
+  font-size: 48px;
+  margin: 40px 0;
+}
+ 
+/*
+ CSS for the footer class
+*/
+
+footer {
+  background: #eee;
+  padding: 30px;
+}
+
+footer section {
+  max-width: 940px;
+  margin: 11px auto;
+  font-size: 11px;
+}
+
+footer section p:before {
+  content: "\00A9";
+  margin: 0 3px 0 0;
+}
+
+/*
+ CSS for media query
+*/
+
+@media (max-width: 657px) {
+  header section {
+    top: inherit;
+    bottom: 40%;
+  }
+  
+  header section h1 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  padding: 0 10px;
+  }
+  
+  header section a {
+  background: #4386fc;
+  font-size: 12px;
+  padding: 8px 16px;
+  color: white;
+  }
+}
