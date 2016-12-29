@@ -1,8 +1,12 @@
 @import url("../reset.css");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font: normal 20px Helvetica, Arial, sans-serif;
-  color: white;  
+  color: white;
 }
 
 a {
@@ -14,7 +18,7 @@ a:hover {
   background: #117bff !important;
 }
 
-/* 
+/*
   CSS for the Header section
 */
 
@@ -22,11 +26,11 @@ header {
   text-align: center;
   background: url("https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg") no-repeat center center;
   background-size: cover;
-  padding: 200px 300px;
+  padding: 100px 0;
 }
 
 header h1 {
-  font-size: 120px;
+  font-size: 60px;
   font-weight: bold;
   line-height: 80%;
   margin: 0 0 80px 0;
@@ -42,44 +46,47 @@ header p {
 header a {
   padding: 10px 40px;
   background: black;
+  display: inline-block;
 }
 
-/* 
+/*
   CSS for the Navigation section
 */
 
 nav {
   background: black;
-  padding: 30px 0 30px 200px;
+  padding: 0 20px;
 }
 
-nav ul, nav ul li {
+nav ul li {
   display: inline-block;
 }
 
 nav li a {
-  padding: 32px 5px;
+  display: inline-block;
+  padding: 20px 5px;
 }
 
-/* 
+/*
   CSS for the Main section
 */
 
 main {
-  padding: 90px 200px;
+  padding: 50px;
 }
 
 main img {
-  margin-top: 40px;
-  width: 20%;
+  vertical-align: top;
+  width: 30%;
 }
 
 main article {
-  width: 70%;
-  float: right;
+  width: 65%;
+  padding: 0 0 0 20px;
+  display: inline-block;
 }
 
-main article h2, 
+main article h2,
 main article p {
   margin-bottom: 20px;
   color: black;
@@ -92,16 +99,15 @@ main article p {
   font-weight: 100;
 }
 
-/* 
+/*
   CSS for the Footer section with the class above
 */
 
 .above {
   background: url("https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg") no-repeat center center;
   background-size: cover;
-  height: 600px;
-  padding: 250px 200px;
-  text-align: right;
+  padding: 50px 15px;
+  text-align: center;
   box-sizing: border-box;
 }
 
@@ -118,17 +124,19 @@ main article p {
 }
 
 .above a {
+  display: inline-block;
   padding: 10px 40px;
   background: black;
 }
 
-/* 
+/*
   CSS for the Footer section with the class below
 */
 
 .below {
-  padding: 30px 0 30px 200px;  
+  padding: 30px 0;
   background: black;
+  text-align: center;
 }
 
 .below p {
@@ -138,4 +146,44 @@ main article p {
 .below p:before {
   content: "\00A9";
   margin-right: 5px;
+}
+
+@media (max-width: 661px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  nav ul {
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
+
+  nav li a {
+    width: 100%;
+    padding: 15px 5px;
+  }
+
+  main {
+    text-align: center;
+    padding: 30px;
+  }
+
+  main img {
+    width: 100px;
+  }
+
+  main article {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: inline-block;
+  }
 }
