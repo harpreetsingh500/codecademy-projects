@@ -41,11 +41,11 @@ nav {
 
 nav ul li {
   margin: 0 10px 0 0;
-  float: left;
+  display: inline-block;
 }
 
 nav ul li:last-child {
-  margin: 0;
+  margin-right: 0;
 }
 
 nav ul li:first-child a {
@@ -125,14 +125,11 @@ nav ul li a {
 .third ul {
   padding: 40px 0 0 0;
   border-top: 1px solid #eee;
-  width: 68%;
-  margin: 0 auto;
 }
 
 .third ul li {
-  width: 33.33%;
+  width: 33%;
   display: inline-block;
-  float: left;
 }
 
 .third ul li h4 {
@@ -142,7 +139,7 @@ nav ul li a {
 }
 
 .third ul li p {
-  margin: 0 0 5px 0;
+  margin: 0 0 8px 0;
   color: #333;
 }
 
@@ -152,17 +149,15 @@ nav ul li a {
 
 footer {
   background: #eee;
-  padding: 40px 0 100px 0;
+  padding: 40px 0;
 }
 
 footer section {
-  width: 68%;
-  margin: 0 auto;
   font-size: 14px;
+  text-align: center;
 }
 
 footer section p {
-  float: left;
   width: 33%;
   display: inline-block;
 }
@@ -172,14 +167,8 @@ footer section p:first-child:before {
   padding: 0 4px 0 0;
 }
 
-footer section p:last-child {
-  text-align: right;
-}
-
 footer section a {
-  float: left;
   color: #d8192f;
-  text-align: center;
   width: 33%;
   display: inline-block;
 }
@@ -198,4 +187,39 @@ footer section a:hover {
   content: " ";
   display: table;
   clear: both;
+}
+
+@media (max-width: 915px) {
+  nav ul li {
+    display: block;
+    margin: 0 0 10px 0;
+  }
+
+  .third ul li {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 815px) {
+  footer section p,
+  footer section a {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .container{
+    text-align: center;
+  }
+
+  header,
+  nav {
+    float: none;
+  }
+
+  header {
+    margin: 0 0 10px 0;
+  }
 }
