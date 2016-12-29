@@ -1,8 +1,8 @@
-@import url("../reset.css");
+@import url("reset.css");
 
 body {
   font-family: 'Montserrat', sans-serif;
-  text-align: center;  
+  text-align: center;
 }
 
 /*
@@ -34,6 +34,11 @@ header section nav ul li {
   display: inline-block;
   font-size: 20px;
   padding: 20px 30px;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background: #e52364;
 }
 
 /*
@@ -101,6 +106,10 @@ header section nav ul li {
   box-sizing: border-box;
 }
 
+.second li a:hover {
+  background: #d9dce0;
+}
+
 /*
  CSS for the footer section
 */
@@ -142,7 +151,7 @@ footer section p {
 
 .info a:hover {
   color: black;
-  background: #eee;  
+  background: #eee;
 }
 
 /*
@@ -156,7 +165,7 @@ footer section p {
     float: none;
     width: 85%;
     display: inline-block;
-  }  
+  }
 }
 
 @media (max-width: 527px) {
@@ -167,16 +176,17 @@ footer section p {
     width: 95%;
     display: inline-block;
   }
-  
+
   header section nav {
     display: block;
   }
-  
+
   header section nav ul li {
     display: block;
     font-size: 20px;
+    margin: 5px 0;
     padding: 20px 30px;
-  }  
+  }
 }
 
 /*
