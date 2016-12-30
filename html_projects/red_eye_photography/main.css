@@ -3,7 +3,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   background: #cccdce;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 /*
@@ -38,10 +38,10 @@ nav ul {
 
 nav ul li {
   padding: 0 10px;
-  display: inline;
+  display: inline-block;
 }
 
-nav ul li a:hover { 
+nav ul li a:hover {
   cursor: pointer;
   color: #31363d;
 }
@@ -51,7 +51,7 @@ nav ul li a:hover {
 */
 
 main {
-  margin: 70px 0 0;
+  margin: 40px 0 0;
 }
 
 main ul {
@@ -74,14 +74,13 @@ main ul li img {
 */
 
 footer {
-  height: 170px;  
+  padding-bottom: 40px;
 }
 
 footer p {
   color: #31363d;
-  font-size: 10px;
-  text-align: right;
-  margin: 0 40px 0 0;
+  font-size: 14px;
+  text-align: center;
 }
 
 /*
@@ -92,5 +91,21 @@ footer p {
   main ul li {
     margin: 0 0 2%;
     width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    padding: 20px 0;
+  }
+
+  h1 {
+    font-size: 20px
+  }
+
+  nav ul li {
+    padding: 0;
+    display: block;
+    margin: 0 0 10px 0;
   }
 }
