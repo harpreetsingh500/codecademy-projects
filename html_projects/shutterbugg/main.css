@@ -1,5 +1,8 @@
 @import url("../reset.css");
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   font: normal 20px Helvetica, Arial, sans-serif;
@@ -7,8 +10,7 @@ body {
 }
 
 div {
-  margin: 0 auto;
-  width: 928px;
+  margin: 0 20px;
 }
 
 /*
@@ -16,23 +18,29 @@ div {
 */
 
 header {
-  background: url("https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/intro.jpg");
-  height: 550px;
-  padding: 70px 0 0 230px;
-  box-sizing: border-box;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/intro.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 40px 10px;
+}
+
+header h1,
+header p {
+  margin-bottom: 30px;
+  color: black;
 }
 
 header h1 {
-  font-size: 64px;
-  margin-bottom: 26px;
+  font-size: 38px;
 }
 
 header p {
   font-size: 26px;
-  margin-bottom: 36px;
+  color: white;
 }
 
 header a {
+  display: inline-block;
   color: white;
   font-size: 18px;
   background: rgba(238,68,95,0.9);
@@ -41,10 +49,11 @@ header a {
 }
 
 header a:hover {
+  color: black;
   box-shadow: 0px 1px 6px rgba(0,0,0,0.6);
 }
 
-/* 
+/*
  CSS for the main section
 */
 
@@ -55,11 +64,21 @@ main {
 main article {
   padding: 36px 0;
   border-bottom: 1px solid #dbdbdb;
-  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+}
+
+.image {
+  width: 20%;
 }
 
 .content {
-  width: 46%;
+  width: 76%;
+  margin: 0 2%;
+}
+
+.image img {
+  width: 100%;
 }
 
 .content h1 {
@@ -139,13 +158,15 @@ main article {
 
 footer {
   background: #f3f3f3;
-  padding: 40px 0 100px 0;
+  padding: 40px 0;
 }
 
 footer section {
   display: inline-block;
   color: #555;
   vertical-align: top;
+  width: 32%;
+  text-align: left;
 }
 
 footer section h2 {
@@ -153,13 +174,41 @@ footer section h2 {
   margin-bottom: 10px;
 }
 
-footer section ul {
-  margin-right: 180px;
-}
-
 footer section li {
   margin: 4px 0;
   font-size: 14px;
   font-weight: 600;
   color: #999;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .image {
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  .content {
+    width: 96%;
+    margin: 0 2%;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+
+  .share .image,
+  .share .content,
+  .explore .image,
+  .explore .content,
+  .save .image,
+  .save .content {
+    float: none;
+  }
+
+  footer section {
+    display: block;
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
 }
